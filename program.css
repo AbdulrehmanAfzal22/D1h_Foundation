@@ -11,7 +11,7 @@ body {
   overflow-x: hidden;
 }
 
-/* ========== NAVIGATION ========== */
+
 .nav-links {
   display: flex;
   justify-content: space-between;
@@ -216,7 +216,7 @@ body {
 
 .programs-box {
   position: relative;
-  background: rgba(7, 73, 110, 0.9);
+  background:#194592;
   width: 60%;
   display: flex;
   align-items: center;
@@ -515,6 +515,8 @@ color: white;
   padding: 6px;
 }
 
+
+
 @media (max-width: 1200px) {
   .education-grid {
     width: 85%;
@@ -673,7 +675,7 @@ color: white;
     font-size: 0.9rem;
   }
 
-  /* Welfare */
+  
   .welfare-grid {
     grid-template-columns: 1fr;
   }
@@ -686,7 +688,7 @@ color: white;
     font-size: 0.85rem;
   }
 
-  /* Programs */
+
   .programs-box {
     width: 95%;
   }
@@ -703,7 +705,7 @@ color: white;
     font-size: 0.85rem;
   }
 
-  /* Youth */
+
   .youth-container {
     flex-direction: column;
     gap: 25px;
@@ -713,7 +715,7 @@ color: white;
     font-size: 0.9rem;
   }
 
-  /* Join Us */
+
   .join-content h2 {
     font-size: 1.6rem;
   }
@@ -722,7 +724,7 @@ color: white;
     font-size: 1rem;
   }
 
-  /* Footer */
+
   .footer-container {
     grid-template-columns: 1fr;
     text-align: center;
