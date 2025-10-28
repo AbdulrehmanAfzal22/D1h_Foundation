@@ -71,12 +71,12 @@
   </div>
 </section>
 
-<!-- ✅ Donation Section -->
+
 <section class="donate">
 <section class="donate-section">
   <div class="donate-container">
 
-    <!-- Left side (Text + Image) -->
+    
     <div class="donate-info">
       <h3 class="donate-heading">Donate Now</h3>
       <h2 class="donate-subheading">Your Help is Their Hope</h2>
@@ -88,23 +88,22 @@
       <img src="D1H LOGO.png" alt="Child in need" class="donate-img">
     </div>
 
-    <!-- Right side (Form) -->
-    <form class="donate-form">
-      <label>Full Name <span>*</span></label>
-      <input type="text" placeholder="Name" required>
 
-      <label>Email <span>*</span></label>
-      <input type="email" placeholder="Email" required>
+   <form class="donate-form" id="form">
+  <label>Full Name <span>*</span></label>
+  <input type="text" name="fullname" placeholder="Name" required>
 
-      <label>Phone No. <span>*</span></label>
-      <input type="text" placeholder="Phone No." required>
+  <label>Email <span>*</span></label>
+  <input type="email" name="email" placeholder="Email" required>
 
-      <label>Message</label>
-      <textarea placeholder="Message"></textarea>
+  <label>Phone No. <span>*</span></label>
+  <input type="text" name="phone" placeholder="Phone No." required>
 
-      <button type="submit">Submit</button>
-    </form>
+  <label>Message</label>
+  <textarea name="message" placeholder="Message"></textarea>
 
+  <button type="submit">Submit</button>
+</form>
   </div>
 </section>
 </section>
@@ -161,10 +160,26 @@
 
     </div>
 
+
+<div id="success-popup" class="success-popup" style="display:none;">
+  <div class="success-box">
+    <button class="close-btn" id="success-close" aria-label="Close">
+      <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" focusable="false">
+        <path fill="currentColor"
+          d="M18.3 5.71a1 1 0 0 0-1.41 0L12 10.59 7.11 5.7A1 1 0 0 0 5.7 7.11L10.59 12l-4.89 4.89a1 1 0 1 0 1.41 1.41L12 13.41l4.89 4.89a1 1 0 0 0 1.41-1.41L13.41 12l4.89-4.89a1 1 0 0 0 0-1.4z" />
+      </svg>
+    </button>
+    <h2>Message Sent Successfully!</h2>
+    <p>Thank you for reaching out. We’ll get back to you soon.</p>
+  </div>
+</div>
+
     <div class="footer-bottom">
       © 2024 All Rights Reserved By D1H Foundation
     </div>
   </footer>
+  <script src="https://unpkg.com/@supabase/supabase-js@2"></script>
+
   <script src="donate.js"></script>
 </body>
 </html>
