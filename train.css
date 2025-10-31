@@ -362,7 +362,7 @@ color: #0593d4;
   display: flex;
   justify-content: center;
   gap: 20px;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   margin-top: 35px;
 }
 .climate-images img {
@@ -372,28 +372,6 @@ color: #0593d4;
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* -----------------------------------
-   Responsive Fixes for Content Sections
------------------------------------ */
-
-/* Universal section wrapping fix */
 .education-section,
 .vocational-section,
 .climate-section,
@@ -403,7 +381,7 @@ color: #0593d4;
   overflow-x: hidden;
 }
 
-/* Make sure paragraphs and lists wrap nicely */
+
 .education-section p,
 .vocational-section p,
 .climate-section p,
@@ -414,7 +392,6 @@ color: #0593d4;
   max-width: 100%;
 }
 
-/* Fix: Vocational section text overflow */
 .vocational-section {
   width: 100%;
   max-width: 950px;
@@ -427,7 +404,7 @@ color: #0593d4;
   box-sizing: border-box;
 }
 
-/* Fix: Climate section images and text */
+
 .climate-section {
   width: 100%;
   max-width: 950px;
@@ -442,7 +419,7 @@ color: #0593d4;
   display: flex;
   justify-content: center;
   gap: 20px;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
 }
 
 .climate-images img {
@@ -453,7 +430,7 @@ color: #0593d4;
   object-fit: cover;
 }
 
-/* Center all main images and prevent overflow */
+
 .edu img,
 .image-box img {
   max-width: 100%;
@@ -462,7 +439,7 @@ color: #0593d4;
   margin: 0 auto;
 }
 
-/* ----------- RESPONSIVE MEDIA FIXES ----------- */
+
 
 @media (max-width: 992px) {
   .vocational-section,
@@ -516,40 +493,6 @@ color: #0593d4;
     max-width: 400px;
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
   @media (max-width: 992px) {

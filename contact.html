@@ -1,14 +1,15 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Donate | Iklaas Foundation</title>
-  <link rel="stylesheet" href="donate.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate - D1h Foundation</title>
+    <link rel="stylesheet" href="contact.css">
 </head>
 <body>
-
- <nav class="nav-links">
+    
+  <nav class="nav-links">
     <img src="D1H LOGO.png" alt="D1h Foundation Logo" class="logo">
     <div class="hamburger" id="hamburger">☰</div>
 
@@ -45,8 +46,8 @@
 
 
 
-  
-    <div class="link">
+
+   <div class="link">
 
       <ul class="menu1" id="menu11" style="display: none;">
         <a href="index.html">
@@ -58,11 +59,11 @@
         <a href="program.html">
           <li class="list">Programs</li>
         </a>
-        <a href="#">
+        <a href="train.html">
           <li class="list">Education & Training</li>
         </a>
 
-        <a href="contact.html">
+<a href="contact.html">
         <li>Contact us</li>
       </a>
 
@@ -76,46 +77,58 @@
 
     </div>
 
+<section class="hero">
+  <div class="hero-content">
+    <h1>Give Hope. Change Lives.</h1>
+    <p>Your generosity is more than a donation—it’s a gift of hope. With your support, we can reach the forgotten, heal the hurting, and empower the future. Every rupee, every dollar counts.</p>
+  </div>
+</section>
 
-  <section class="donation">
-    <div class="donation-box">
-      <h1>Support Our Mission </h1>
-      <p>Every rupee helps us continue our work for youth and community development.</p>
 
-      <div class="accounts">
-        <div class="account">
-          <h3>🏦 Bank Transfer</h3>
-          <p><strong>Account Title:</strong> D1H Foundation</p>
-          <p><strong>Account Number:</strong> 1234-567890-1</p>
-          <p><strong>Bank Name:</strong> Meezan Bank</p>
-          <p><strong>IBAN:</strong> PK12MEZN00001234567890</p>
-        </div>
+<section class="donate">
+<section class="donate-section">
+  <div class="donate-container">
 
-        <div class="account">
-          <h3>📱 Easypaisa</h3>
-          <p><strong>Account Title:</strong> D1h Foundation</p>
-          <p><strong>Account Number:</strong> 0300-1234567</p>
-        </div>
-
-        <div class="account">
-          <h3>💰 JazzCash</h3>
-          <p><strong>Account Title:</strong> D1H Foundation</p>
-          <p><strong>Account Number:</strong> 0301-9876543</p>
-        </div>
-
-        <div class="account">
-          <h3>🌍 PayPal (International)</h3>
-          <p><strong>Email:</strong> donate@D1H.org</p>
-        </div>
-      </div>
-
-      <p class="note">May Allah reward you for your generosity 🤲</p>
+    
+    <div class="donate-info">
+      <h3 class="donate-heading">Donate Now</h3>
+      <h2 class="donate-subheading">Your Help is Their Hope</h2>
+      <p>
+        Thousands are waiting for a helping hand. Be the reason someone eats today,
+        studies tomorrow, or dreams again. Fill out the form and be part of a
+        life-changing journey.
+      </p>
+      
+      <img class="donate-img"  fetchpriority="high" decoding="async" width="740" height="493" src="https://intlulamafoundation.org/wp-content/uploads/2025/05/poor-girl.jpg" class="attachment-large size-large wp-image-150" alt="" srcset="https://intlulamafoundation.org/wp-content/uploads/2025/05/poor-girl.jpg 740w, https://intlulamafoundation.org/wp-content/uploads/2025/05/poor-girl-300x200.jpg 300w" sizes="(max-width: 740px) 100vw, 740px">
     </div>
-  </section>
 
- 
-   <footer class="footer">
 
+   <form class="donate-form" id="form">
+  <label>Full Name <span>*</span></label>
+  <input type="text" name="fullname" placeholder="Name" required>
+
+  <label>Email <span>*</span></label>
+  <input type="email" name="email" placeholder="Email" required>
+
+  <label>Phone No. <span>*</span></label>
+  <input type="text" name="phone" placeholder="Phone No." required>
+
+  <label>Message</label>
+  <textarea name="message" placeholder="Message"></textarea>
+
+  <button type="submit">Submit</button>
+</form>
+  </div>
+</section>
+</section>
+
+
+
+
+
+
+  
+  <footer class="footer">
     <div class="footer-container">
 
       <div class="footer-logo">
@@ -161,11 +174,26 @@
 
     </div>
 
+
+<div id="success-popup" class="success-popup" style="display:none;">
+  <div class="success-box">
+    <button class="close-btn" id="success-close" aria-label="Close">
+      <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" focusable="false">
+        <path fill="currentColor"
+          d="M18.3 5.71a1 1 0 0 0-1.41 0L12 10.59 7.11 5.7A1 1 0 0 0 5.7 7.11L10.59 12l-4.89 4.89a1 1 0 1 0 1.41 1.41L12 13.41l4.89 4.89a1 1 0 0 0 1.41-1.41L13.41 12l4.89-4.89a1 1 0 0 0 0-1.4z" />
+      </svg>
+    </button>
+    <h2>Message Sent Successfully!</h2>
+    <p>Thank you for reaching out. We’ll get back to you soon.</p>
+  </div>
+</div>
+
     <div class="footer-bottom">
       © 2024 All Rights Reserved By D1H Foundation
     </div>
   </footer>
+  <script src="https://unpkg.com/@supabase/supabase-js@2"></script>
 
-  <script src="donate.js"></script>
+  <script src="contact.js"></script>
 </body>
 </html>
