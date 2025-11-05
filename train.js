@@ -27,3 +27,4 @@ close.addEventListener("click", function (event) {
 html.addEventListener("click", function () {
   menu.style.display = "none"; 
 });
+ 

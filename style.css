@@ -518,6 +518,227 @@ text-decoration: none;
 color: #0593d4;
 }
 
+
+body {
+  opacity: 0;
+  animation: fadeInPage 1.2s ease forwards;
+}
+@keyframes fadeInPage {
+  to { opacity: 1; }
+}
+.hero-text {
+  opacity: 0;
+  transform: translateY(40px);
+  animation: heroSlideUp 1.4s ease forwards;
+  animation-delay: 0.5s;
+}
+@keyframes heroSlideUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.card img,
+.card1 img,
+.join-img img,
+.com-image img {
+  transition: transform 0.6s ease;
+}
+.card img:hover,
+.card1 img:hover,
+.join-img img:hover,
+.com-image img:hover {
+  transform: scale(1.08);
+}
+button,
+.hero-btn,
+.join-btn,
+.btn {
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+button:hover,
+.hero-btn:hover,
+.join-btn:hover,
+.btn:hover {
+  transform: translateY(-3px) scale(1.05);
+}
+.heading, .heading1 {
+  opacity: 0;
+  animation: fadeUp 1s ease forwards;
+}
+.heading { animation-delay: 0.2s; }
+.heading1 { animation-delay: 0.4s; }
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to   { opacity: 1; transform: translateY(0);   }
+}
+.card, .card1 {
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+.card:hover, .card1:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 28px rgba(0, 0, 0, 0.18);
+}
+nav ul a li {
+  position: relative;
+}
+nav ul a li::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background: #fff;
+  bottom: -4px;
+  left: 0;
+  transition: width 0.3s ease;
+}
+nav ul a:hover li::after {
+  width: 100%;
+}
+html {
+  scroll-behavior: smooth;
+}
+.hero img {
+  animation: heroZoom 12s ease-in-out infinite alternate;
+  filter: brightness(60%);
+}
+
+
+@keyframes heroZoom {
+  0% { transform: scale(1); filter: brightness(90%); }
+  100% { transform: scale(1.12); filter: brightness(100%); }
+}
+.hero-text h1 {
+  opacity: 0;
+  transform: translateY(40px);
+  animation: textFade 1.3s ease forwards 0.3s;
+}
+.hero-text p {
+  opacity: 0;
+  transform: translateY(40px);
+  animation: textFade 1.3s ease forwards 0.6s;
+}
+.hero-btn {
+  opacity: 0;
+  transform: translateY(40px);
+  animation: textFade 1.3s ease forwards 0.9s;
+}
+@keyframes textFade {
+  to { opacity: 1; transform: translateY(0); }
+}
+.card, .card1 {
+  backdrop-filter: blur(6px);
+  transition: transform .4s ease, box-shadow .4s ease, background .4s ease;
+}
+.card:hover, .card1:hover {
+  transform: translateY(-12px) scale(1.03);
+  background: rgba(255, 255, 255, 0.18);
+  box-shadow: 0 25px 45px rgba(0,0,0,0.25);
+}
+.hero-btn, .btn, .join-btn {
+  position: relative;
+  overflow: hidden;
+}
+.hero-btn::after, .btn::after, .join-btn::after {
+  content: "";
+  position: absolute;
+  top: 0; left: -100%;
+  width: 100%; height: 100%;
+  background: linear-gradient(120deg, transparent, rgba(255,255,255,0.5), transparent);
+  transition: left .6s ease;
+}
+.hero-btn:hover::after, .btn:hover::after, .join-btn:hover::after {
+  left: 100%;
+}
+.reveal {
+  opacity: 0;
+  transform: translateY(45px);
+  transition: opacity 0.9s ease, transform 0.9s ease;
+}
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+body {
+  opacity: 0;
+  animation: fadeInPage 1.2s ease forwards;
+}
+@keyframes fadeInPage {
+  to { opacity: 1; }
+}
+.hero-text {
+  opacity: 0;
+  transform: translateY(40px);
+  animation: heroSlideUp 1.4s ease forwards;
+  animation-delay: 0.5s;
+}
+@keyframes heroSlideUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.card img,
+.card1 img,
+.join-img img,
+.com-image img {
+  transition: transform 0.6s ease;
+}
+.card img:hover,
+.card1 img:hover,
+.join-img img:hover,
+.com-image img:hover {
+  transform: scale(1.08);
+}
+button,
+.hero-btn,
+.join-btn,
+.btn {
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+button:hover,
+.hero-btn:hover,
+.join-btn:hover,
+.btn:hover {
+  transform: translateY(-3px) scale(1.05);
+}
+.heading, .heading1 {
+  opacity: 0;
+  animation: fadeUp 1s ease forwards;
+}
+.heading { animation-delay: 0.2s; }
+.heading1 { animation-delay: 0.4s; }
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to   { opacity: 1; transform: translateY(0);   }
+}
+.card, .card1 {
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+.card:hover, .card1:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 28px rgba(0, 0, 0, 0.18);
+}
+nav ul a li {
+  position: relative;
+}
+nav ul a li::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background: #fff;
+  bottom: -4px;
+  left: 0;
+  transition: width 0.3s ease;
+}
+nav ul a:hover li::after {
+  width: 100%;
+}
+html {
+  scroll-behavior: smooth;
+}
 @media(max-width: 900px) {
   .footer-container {
     grid-template-columns: 1fr 1fr;

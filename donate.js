@@ -1,5 +1,5 @@
 let hamburger = document.getElementById("hamburger")
-let menu = doc  ument.getElementById("menu11")
+let menu = document.getElementById("menu11")
 let close = document.getElementById("button1")
 let donate = document.getElementById("button-donate")
 let html = document.documentElement;
@@ -27,4 +27,16 @@ close.addEventListener("click", function (event) {
 
 html.addEventListener("click", function () {
   menu.style.display = "none"; 
+});
+
+
+
+const footer = document.querySelector(".footer");
+
+window.addEventListener("scroll", () => {
+  const footerPos = footer.getBoundingClientRect().top;
+  const windowHeight = window.innerHeight;
+  if (footerPos < windowHeight - 100) {
+    footer.classList.add("visible");
+  }
 });

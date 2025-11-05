@@ -661,3 +661,84 @@ color: #0593d4;
 
 
 }
+
+
+body {
+  opacity: 0;
+  animation: fadeInPage 1.2s ease forwards;
+}
+@keyframes fadeInPage {
+  to { opacity: 1; }
+}
+.hero-text {
+  opacity: 0;
+  transform: translateY(40px);
+  animation: heroSlideUp 1.4s ease forwards;
+  animation-delay: 0.5s;
+}
+@keyframes heroSlideUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.card img,
+.card1 img,
+.join-img img,
+.com-image img {
+  transition: transform 0.6s ease;
+}
+.card img:hover,
+.card1 img:hover,
+.join-img img:hover,
+.com-image img:hover {
+  transform: scale(1.08);
+}
+button,
+.hero-btn,
+.join-btn,
+.btn {
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+button:hover,
+.hero-btn:hover,
+.join-btn:hover,
+.btn:hover {
+  transform: translateY(-3px) scale(1.05);
+}
+.heading, .heading1 {
+  opacity: 0;
+  animation: fadeUp 1s ease forwards;
+}
+.heading { animation-delay: 0.2s; }
+.heading1 { animation-delay: 0.4s; }
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to   { opacity: 1; transform: translateY(0);   }
+}
+.card, .card1 {
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+.card:hover, .card1:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 28px rgba(0, 0, 0, 0.18);
+}
+nav ul a li {
+  position: relative;
+}
+nav ul a li::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background: #fff;
+  bottom: -4px;
+  left: 0;
+  transition: width 0.3s ease;
+}
+nav ul a:hover li::after {
+  width: 100%;
+}
+html {
+  scroll-behavior: smooth;
+}
