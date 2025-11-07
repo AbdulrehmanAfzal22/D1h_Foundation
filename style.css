@@ -521,6 +521,8 @@ color: #0593d4;
 
 body {
   opacity: 0;
+  padding: 0%;
+  margin: 0%;
   animation: fadeInPage 1.2s ease forwards;
 }
 @keyframes fadeInPage {
@@ -600,7 +602,7 @@ html {
 }
 .hero img {
   animation: heroZoom 12s ease-in-out infinite alternate;
-  filter: brightness(60%);
+    filter: brightness(40%) !important;
 }
 
 
@@ -662,6 +664,8 @@ html {
 
 body {
   opacity: 0;
+    padding: 0%;
+  margin: 0%;
   animation: fadeInPage 1.2s ease forwards;
 }
 @keyframes fadeInPage {
@@ -844,6 +848,6 @@ html {
     font-size: 0.7rem;
   }
   .card {
-    width: 90%;
+    width: 100%;
   }
 }
